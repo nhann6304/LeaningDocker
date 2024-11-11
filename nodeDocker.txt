@@ -1,0 +1,2 @@
+docker ps => Kiểm tra các container đang chạy
+docker ps -a => Kiểm tra các container đang chạy hoặc dừng

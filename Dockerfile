@@ -6,10 +6,11 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY . /app
 
-RUN npm run build
+# RUN npm run build
+# RUN npm run dev
 
-EXPOSE 8000
+EXPOSE 80 
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]

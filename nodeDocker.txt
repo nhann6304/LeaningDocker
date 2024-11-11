@@ -1,2 +1,7 @@
 docker ps => Kiểm tra các container đang chạy
 docker ps -a => Kiểm tra các container đang chạy hoặc dừng
+
+------------------------------------------------------------
+
+docker run -p 3000:80 => chạy image đó ( 3000 là port bên ngoài 80 là port của docker) 
+docker stop <Tên> dừng tiến trình chạy

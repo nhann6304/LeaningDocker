@@ -1,3 +1,9 @@
+---------------------------Images---------------------------
+
+docker build . (. là thư mục hiện tại đang đứng);
+docker build  -t goals:latest
+
+
 ---------------------------Container---------------------------
 
 docker ps => Kiểm tra các container đang chạy
@@ -5,9 +11,11 @@ docker ps -a => Kiểm tra các container đang chạy hoặc dừng
 
 ---------------------------Docker run---------------------------
 
-docker run -p 3000:80 => chạy image đó (3000 là port bên ngoài 80 là port của docker) 
+docker run -p 3000:80 --name => chạy image đó (3000 là port bên ngoài 80 là port của docker) 
 
-docker run -p 8000:80 d <Id image>  &&
+=> --name đặt tên cho container đó (khác với đặt tên cho image)
+
+docker run -p 8000:80 -d <Id image>  &&
 docker run -p 8001:80 -d --rm  <Id image>  
 
 => -d là chạy ở chế độ nền nghĩa là có thể chạy nhiều port trên cùng 1 image ví dụ 8000 và 8001 

@@ -11,6 +11,6 @@ COPY . /app
 # RUN npm run build
 # RUN npm run dev
 
-EXPOSE 80 
+EXPOSE 80
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "dev"];

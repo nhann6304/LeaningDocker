@@ -1,7 +1,32 @@
+---------------------------Container---------------------------
+
 docker ps => Kiểm tra các container đang chạy
 docker ps -a => Kiểm tra các container đang chạy hoặc dừng
 
-------------------------------------------------------------
+---------------------------Docker run---------------------------
 
-docker run -p 3000:80 => chạy image đó ( 3000 là port bên ngoài 80 là port của docker) 
-docker stop <Tên> dừng tiến trình chạy
+docker run -p 3000:80 => chạy image đó (3000 là port bên ngoài 80 là port của docker) 
+
+docker run -p 8000:80 d <Id image>  &&
+docker run -p 8001:80 -d --rm  <Id image>  
+
+=> -d là chạy ở chế độ nền nghĩa là có thể chạy nhiều port trên cùng 1 image ví dụ 8000 và 8001 
+=> --rm là khi mà tắt cái container đã chạy thì xóa nó luôn
+
+
+=> docker log <Id container> kiểm tra log của container có id đó
+=> docker log -f <Id container>  => thoát ra ctrl C
+
+docker attach <Id container> => chạy thẳng log của cái container đó luôn!!! 
+
+---------------------------Docker control---------------------------
+
+docker start => Chạy 1 container dã dừng
+
+docker stop <Tên> => dừng tiến trình chạy
+
+docker rm <Id container> xóa container 
+
+docker rmi <Id image> xóa Image
+
+

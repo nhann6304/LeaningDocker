@@ -29,7 +29,6 @@ docker attach <Id container> => chạy thẳng log của cái container đó lu�
 
 ---------------------------Docker control---------------------------
 
-
 docker start => Chạy 1 container dã dừng
 
 docker stop <Tên> => dừng tiến trình chạy
@@ -37,5 +36,12 @@ docker stop <Tên> => dừng tiến trình chạy
 docker rm <Id container> xóa container 
 
 docker rmi <Id image> xóa Image
+
+
+---------------------------Docker hub--------------------------- bài 39 
+
+docker login => đăng nhập docker hub
+docker logout => đăng nhập docker hub
+
 
 

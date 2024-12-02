@@ -13,4 +13,6 @@ COPY . /app
 
 EXPOSE 80
 
+VOLUME [ "/app/feedback" ]
+
 CMD ["npm", "run", "dev"];
